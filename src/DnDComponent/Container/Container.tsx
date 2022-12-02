@@ -4,6 +4,8 @@ import classNames from "classnames";
 import { Handle, Remove } from "../Item";
 
 import styles from "./Container.module.css";
+import More from "../../Icons/More";
+import Plus from "../../Icons/Plus";
 
 export interface Props {
   children: React.ReactNode;
@@ -67,8 +69,11 @@ export const Container = forwardRef<HTMLDivElement, Props>(
       >
         {label ? (
           <div className={styles.Header}>
-            {label}
-            <div className={styles.Actions}></div>
+            {label.replace("Column ", "")}
+            <div className={styles.Actions}>
+              <Plus />
+              <More />
+            </div>
           </div>
         ) : null}
         {placeholder ? (
