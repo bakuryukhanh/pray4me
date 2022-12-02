@@ -159,7 +159,15 @@ export const Item = React.memo(
               <div className="content">{renderProps?.description}</div>
               <Avatar.Group>
                 {renderProps?.user.map((item) => (
-                  <Avatar style={{ background: "red" }}>{item}</Avatar>
+                  <Avatar
+                    style={{
+                      background: `#${Math.floor(
+                        Math.random() * 16777215
+                      ).toString(16)}`,
+                    }}
+                  >
+                    {item}
+                  </Avatar>
                 ))}
               </Avatar.Group>
             </div>

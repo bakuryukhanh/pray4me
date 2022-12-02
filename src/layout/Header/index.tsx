@@ -17,7 +17,7 @@ const Header = () => {
       <div className={style["right"]}>
         <Bell />
         <Info />
-        <Avatar />
+        <Avatar src="/ava.png" />
       </div>
     </div>
   );
