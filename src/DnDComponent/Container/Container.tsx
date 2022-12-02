@@ -79,7 +79,9 @@ export const Container = forwardRef<HTMLDivElement, Props>(
         {placeholder ? (
           children
         ) : (
-          <ul style={{ margin: "0", padding: "20px" }}>{children}</ul>
+          <ul style={{ margin: "0", padding: "20px", height: "100%" }}>
+            {children}
+          </ul>
         )}
       </Component>
     );

@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 export const items = {
-  todo: [
+  TODO: [
     {
       id: "1",
       title: "Learn React",
@@ -71,7 +71,7 @@ export const items = {
       ],
     },
   ],
-  inProgress: [
+  "IN PROGRESS": [
     {
       id: "4",
       title: "Learn React",
@@ -142,7 +142,7 @@ export const items = {
       ],
     },
   ],
-  done: [
+  DONE: [
     {
       id: "7",
       title: "Learn React",
