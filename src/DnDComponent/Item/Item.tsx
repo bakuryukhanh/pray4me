@@ -159,7 +159,7 @@ export const Item = React.memo(
               <div className="content">{renderProps?.description}</div>
               <Avatar.Group>
                 {renderProps?.user.map((item) => (
-                  <Avatar>{item}</Avatar>
+                  <Avatar style={{ background: "red" }}>{item}</Avatar>
                 ))}
               </Avatar.Group>
             </div>
