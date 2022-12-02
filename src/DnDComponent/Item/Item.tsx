@@ -9,6 +9,7 @@ import { Handle, Remove } from "./components";
 
 import styles from "./Item.module.css";
 import More from "../../Icons/More";
+import { items } from "../../data";
 
 export interface Props {
   renderProps?: {
@@ -150,7 +151,12 @@ export const Item = React.memo(
           >
             <div className="container">
               <div className="header">
-                <div className="tag">Design system</div>
+                <div
+                  className="tag"
+                  style={{ "--color": renderProps.tag.color }}
+                >
+                  {renderProps.tag.title}
+                </div>
                 <div className="action">
                   <More />
                 </div>
